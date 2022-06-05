@@ -4,9 +4,126 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Alexander Barrett Portfolio</title>
+    <meta name="description" content="A place to show case my work to date and tell you a little about me." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/cartoon.css" rel="stylesheet" />
+    <script src="/js/index.js" type="module" defer></script>
   </head>
   <body>
-    <h1>Helloooooo</h1>
+    <header>
+      <div id="skip"><a href="#home">Skip to Main Content</a></div>
+      <nav>
+        <span class="name">Alexander Barrett</span>
+        <ul class="nav-links hide-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="menu-button">
+          <span class="visually-hidden">menu</span>
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+        </button>
+      </nav>
+    </header>
+    <main class="page-wrapper-medium">
+      <section id="home">
+        <h1>Hi, I'm Alexander, a front end development student and this is my portfolio</h1>
+        <div class="cartoon-me">
+          <div class="neck"></div>
+          <div class="ear-right"></div>
+          <div class="ear-left"></div>
+          <div class="face">
+            <div class="nose"></div>
+            <div class="eyebrow-right"></div>
+            <div class="eyebrow-left"></div>
+          </div>
+          <div class="stubble"></div>
+          <div class="hair hl"></div>
+          <div class="hair hlm"></div>
+          <div class="hair hr"></div>
+          <div class="hair hrm"></div>
+          <div class="hair htl"></div>
+          <div class="mouth"></div>
+          <div class="glasses-container">
+            <div class="glasses">
+              <div class="g-top"></div>
+              <div class="g-left glass"></div>
+              <div class="g-right glass"></div>
+              <div class="eye left-eye">
+                <div class="iris">
+                  <div class="pupil"></div>
+                </div>
+              </div>
+              <div class="eye right-eye">
+                <div class="iris">
+                  <div class="pupil"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="about-divider"></div>
+      <section id="projects">
+        <h2>Recent Projects</h2>
+        <div class="project-card">
+          <h3>The Fluffy Piranha Blog</h3>
+          <div class="project-content">
+            <div class="project-image blog-image"></div>
+            <div class="project-details">
+              <p>A blog for my dog Leo, using a headless WordPress CMS installation, to provide content for a Netlify website. As part of the end of my first year assignment for Noroff</p>
+              <p>Built with: HTML5, CSS3, JavaScript, and WordPress CMS</p>
+              <a href="#"><img src="/images/github.svg" alt="github logo" /> GitHub</a>
+              <a href="#"><img src="/images/external-link-icon.png" alt="external site icon" /> Live Site</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <h3>Community Science Museum</h3>
+          <div class="project-content">
+            <div class="project-image museum-image"></div>
+            <div class="project-details">
+              <p>A website for a community science museum, as part of a first semester project for Noroff.</p>
+              <p>Built with: HTML5 and CSS3</p>
+              <a href="#"><img src="/images/github.svg" alt="github logo" /> GitHub</a>
+              <a href="#"><img src="/images/external-link-icon.png" alt="external site icon" /> Live Site</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <h3>Rainydays</h3>
+          <div class="project-content">
+            <div class="project-image rainydays-image"></div>
+            <div class="project-details">
+              <p>
+                A website for a fictional outdoor jacket seller. A project spanning my first year of study, initially built with HTML and CSS. Later adding JavaScript and WordPress as a headless CMS.
+              </p>
+              <p>Built with: HTML5, CSS3, JavaScript, and WordPress CMS</p>
+              <a href="#"><img src="/images/github.svg" alt="github logo" /> GitHub</a>
+              <a href="#"><img src="/images/external-link-icon.png" alt="external site icon" /> Live Site</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="project-divider"></div>
+      <section id="about">
+        <h2>About me</h2>
+      </section>
+      <div class="contact-divider"></div>
+      <section id="contact">
+        <h2>Contact</h2>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Copyright 2022</p>
+      <p>Built by Alexander Barrett</p>
+    </footer>
   </body>
 </html>
