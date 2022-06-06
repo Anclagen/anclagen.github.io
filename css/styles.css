@@ -250,23 +250,6 @@ nav button {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100% auto;
-  animation-duration: 30s;
-  animation-name: "scrolling";
-  animation-play-state: paused;
-  animation-iteration-count: infinite;
-  animation-delay: 0.5s;
-}
-
-@keyframes scrolling {
-  0% {
-    background-position: 0 0;
-  }
-  50%{
-    background-position: 0 100%;
-  }
-  100%{
-    background-position: 0 0;
-  }
 }
 
 .blog-image{
@@ -427,7 +410,8 @@ nav button {
   }
 
   .project-card:hover .project-image{
-    animation-play-state: running;
+    transition: 10s;
+    background-position: 0 100%;
   }
 
   .project-image{
