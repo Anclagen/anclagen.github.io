@@ -329,7 +329,11 @@ nav button {
   nav ul,
   .hide-menu{
     display: flex;
-    max-width: 60%;
+    max-width: 460px;
+  }
+  
+  nav{
+    position: relative;
   }
 
   .nav-links{
@@ -339,9 +343,11 @@ nav button {
   }
 
   /*wrapper adjustments*/
+  .page-wrapper-nav,
   .page-wrapper-medium{
     max-width: 1000px;
     width: 90%;
+    margin: 0 auto;
   }
   
   .page-wrapper-small{

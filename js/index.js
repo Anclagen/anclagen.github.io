@@ -40,17 +40,34 @@ function openCloseMenu(){
   hamBotLine.classList.toggle("menu-open-rotate3");
   hamMidLine.classList.toggle("menu-open-transparent");
 }
-/*----------------- eyes move ---------------------*/
+/*----------------- silly eyes ---------------------*/
+//https://www.geeksforgeeks.org/design-smiley-face-eyes-that-follow-mouse-cursor-using-css-and-js/
 const body = document.querySelector("body")
 const eyes = document.querySelectorAll(".iris");
+
 body.addEventListener("mousemove", (event) => {
-  const x = -(window.innerWidth / 2 - event.pageX) / 35;
-  const y = -(window.innerHeight / 2 - event.pageY) / 35;
+  let x = -(window.innerWidth / 2 - event.pageX) / 50;
+  let y = -(window.innerHeight / 2 - event.pageY) / 50;
+  //preventing white eyes demonic possession
+  if(x > 18){
+    x=18
+  }else if(x < -10){
+    x=-10
+  }
+
+  if(y > 7){
+    y=7
+  }else if(y < -11){
+    y=-11
+  }
+  console.log(x, y)
+
+  //let rotate = 90;
+
   eyes.forEach(eye => {
-    eye.style.transform = `rotate(-45deg) translateY(${y}px)  translateX(${x}px)`;
+    eye.style.transform = `translateY(${y}px)  translateX(${x}px)`;
   })         
 }); 
-
 
 /*------------ Display content on scroll ----------*/
 
