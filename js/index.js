@@ -40,6 +40,17 @@ function openCloseMenu(){
   hamBotLine.classList.toggle("menu-open-rotate3");
   hamMidLine.classList.toggle("menu-open-transparent");
 }
+/*----------------- eyes move ---------------------*/
+const body = document.querySelector("body")
+const eyes = document.querySelectorAll(".iris");
+body.addEventListener("mousemove", (event) => {
+  const x = -(window.innerWidth / 2 - event.pageX) / 35;
+  const y = -(window.innerHeight / 2 - event.pageY) / 35;
+  eyes.forEach(eye => {
+    eye.style.transform = `rotate(-45deg) translateY(${y}px)  translateX(${x}px)`;
+  })         
+}); 
+
 
 /*------------ Display content on scroll ----------*/
 

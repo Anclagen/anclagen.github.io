@@ -40,6 +40,9 @@ h3{
 }
 
 footer{
+  margin-bottom: 0;
+  padding: 30px;
+  background-color: var(--dark-blue);
   text-align: center;
 }
 
@@ -89,6 +92,11 @@ header{
   position: fixed;
   top: 0;
   z-index: 100;
+}
+
+.logo{
+  max-height: 65px;
+  padding-left: 20px;
 }
 
 /* links layout*/
@@ -321,6 +329,7 @@ nav button {
   nav ul,
   .hide-menu{
     display: flex;
+    max-width: 60%;
   }
 
   .nav-links{
@@ -340,7 +349,7 @@ nav button {
     width: 90%;
   }
 
-  /*home section push down*/
+  /*------home section push down------*/
   #home{
     display: grid;
     gap: 20px;
@@ -353,7 +362,7 @@ nav button {
     max-height: 40vw;
   }
 
-  /* about section */
+  /*---------about section ------*/
   /*just fixing firefox content flash bug poorly*/
   #about{
     min-height: 370px;
@@ -417,17 +426,16 @@ nav button {
   .project-image{
     opacity: 0;
     transform: translate(0%, 50%);
-    transition: 1.5s;
   }
 
   .project-details{
     opacity: 0;
-    transition: 2s;
     transform: translate(50%, 0);
   }
 
   .observed-item  .project-details,
   .observed-item .project-image{
+    transition: 2s;
     opacity: 1;
     transform: translate(0, 0);
   }
