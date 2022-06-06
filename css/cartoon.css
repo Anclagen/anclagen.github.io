@@ -1,37 +1,43 @@
 
 .cartoon-me {
-  --skin: rgb(255, 199, 161); 
+  --skin: rgb(255, 199, 161);
+  --skin3: rgb(248, 189, 150);
+  --skin2: rgb(206, 160, 130);
   --iris: rgb(102, 54, 14);
   --hair: rgb(36, 23, 6);
-  --shirt: #637088;
-  --line: rgba(80,0,0,0.15);
+  --shirt: #071033;
+  --shirt2: #111c47;
+  --shirt3: #152258;
+  --button: #546ed6;
 }
 
 .cartoon-me {
+  margin: 0 auto;
   position: relative;
-  width: 80vmin;
-  height: 80vmin;
+  width: 50vmin;
+  height: 50vmin;
   border-radius: 50%;
-  background-color: azure;
-  overflow: hidden;
+  background-color: azure; 
+}
+
+.cartoon-me div {
+  position: absolute;
   box-sizing: border-box;
 }
 
 .face{
-  position: absolute;
-  top: 30%;
+  top: 33%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 24%;
-  height: 30%;
+  width: 36%;
+  height: 45%;
   background: var(--skin);
   border-radius: 50% 50% 44% 45% / 33% 31% 51% 50%;
 }
 
 .nose {
-  position: absolute;
-  width: 16%;
-  height: 30%;
+  width: 24%;
+  height: 35%;
   background: black;
   opacity: 0.1;
   top: 46%;
@@ -42,13 +48,12 @@
 
 .eyebrow-right,
 .eyebrow-left {
-  position: absolute;
   width: 40%;
   height: 20%;
   top: 26%;
   left: 55%;
   border-radius:  100% 90% 100% 40% / 70% 100% 90% 100%;
-  box-shadow: -0.25vmin -1.5vmin 0 -0.25vmin var(--hair);
+  box-shadow: 5vmin -5vmin 5vmin -5vmin var(--hair);
 }
 
 .eyebrow-right{
@@ -57,124 +62,101 @@
 }
 
 .stubble{
-  position: absolute;
-  top: 40%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 21%;
-  height: 10%;
+  width: 32%;
+  height: 15%;
   background: rgb(0, 0, 0);
   opacity: 0.05;
-  border-radius: 41% 43% 50% 50% / 10% 10% 100% 100% ;
+  border-radius: 45% 43% 50% 50% / 5% 5% 100% 100% ;
 }
 
 .mouth{
-  position: absolute;
-  top: 39%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 9vmin;
-  height: 3vmin;
-  border-top-left-radius: 0.8vmin;
-  border-top-right-radius: 0.8vmin;
-  border-bottom-left-radius: 8vmin;
-  border-bottom-right-radius: 8vmin;
-  box-sizing: border-box;
-  position: absolute;
+  width: 19%;
+  height: 6.75%;
+  border-radius: 0.8vmin 0.8vmin 8vmin 8vmin;
   background: rgb(255, 72, 0);
-  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 300ms smooth;
 }
 
 
-.neck{
-  position: absolute;
-  width: 10%;
-  height: 15%;
-  background: var(--skin);
-  top: 46%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 7vmin;
-  box-shadow: inset 0 15.5vmin 0 -9.5vmin var(--line)
-}
 /* ears */
 .ear-left,
 .ear-right{
-  position: absolute;
-  width: 5%;
-  height: 9%;
-  background: var(--skin);
-  top: 29%;
-  right: 32%;
+  width: 7.5%;
+  height: 13.5%;
+  background: var(--skin3);
+  top: 31%;
+  left: 69%;
   transform: translate(-50%, -50%);
-  border-radius: 
-  33% 61% 44% 52% / 39% 41% 59% 20%;
-  box-shadow: inset 10vmin 2vmin 1vmin -8.5vmin var(--line)
+  border-radius: 33% 61% 44% 52% / 39% 41% 59% 20%;
+  box-shadow: inset 20vmin 2vmin 1vmin 8.5vmin var(--line)
 }
 
 .ear-left{
   border-radius: 
   61% 33% 52% 44%/ 41% 39% 20% 59%;
-  right: 58%;
+  left: 31%;
   box-shadow: inset -10vmin 2vmin 1vmin -8.5vmin var(--line)
 }
 /* hair */
 .hair {
-  position: absolute;
   background-color: var(--hair);
   transform: translate(-50%, -50%);
 }
 
 .hl{
-  width: 2%;
-  height: 9%;
+  width: 3%;
+  height: 13.5%;
   top: 23%;
-  left: 38%;
+  left: 32.5%;
   border-radius: 69% 0% 37% 30% / 41% 30% 54% 31%;
 }
 
 .hlm{
-  width: 7%;
-  height: 9%;
-  top: 13%;
-  left: 37.6%;
+  width: 10.5%;
+  height: 13.5%;
+  top: 6%;
+  left: 32.5%;
   border-radius: 94% 3%  97% 0% / 95% 11% 89% 0%;
   transform: rotate(9deg);
 }
 
 .htl{
-  width: 7%;
-  height: 19%;
-  top: 6%;
-  left: 47%;
+  width: 10.5%;
+  height: 29%;
+  top: -4%;
+  left: 45%;
   border-radius: 98% 2% 100% 0% / 62% 0% 100% 38%;
   transform: rotate(78deg);
 } 
 
 .hr{
-  width: 2%;
-  height: 9%;
+  width: 3%;
+  height: 13.5%;
   top: 23%;
-  left: 62%;
+  left: 67.5%;
   border-radius: 0% 69% 30% 37% / 30% 41% 31% 54%;
 }
 
  .hrm{
-  width: 7%;
-  height: 9%;
-  top: 12.5%;
-  left: 55.3%;
+  width: 10.5%;
+  height: 13.5%;
+  top: 7%;
+  left: 57%;
   border-radius: 0% 100% 8% 93% / 35% 73% 26% 66%;
-  /* border-radius: 3% 94%  0% 97% / 11% 95% 0% 89%; */
   transform: rotate(-15deg);
 }
 
 /* glasses */
 .glasses-container{
-  position: absolute;
-  width: 26%; 
-  height: 10%;
-  top: 28%;
+  width: 39%; 
+  height: 15%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -186,7 +168,6 @@
 }
     
 .g-top {
-  position: absolute;
   height: 0.5vmin;
   width: 100%;
   background-color: black;
@@ -195,7 +176,6 @@
 }
     
 .glass {
-  position: absolute;
   height: 60%;
   width:38%;
   background-color: var(--skin);
@@ -218,7 +198,6 @@
 /* eyes part of glasses */
 
 .eye{
-  position: absolute;
   top: 13%;
   background-color: white;
   overflow: hidden;
@@ -244,7 +223,9 @@
   position: relative;
   background-color: var(--iris);
   height: 3.5vmin;
+  max-height: 40px;
   width: 3.5vmin;
+  max-width: 40px;
   border-radius: 50%;
   margin-left: 1.6vmin;
   margin-top: 0vmin;
@@ -252,10 +233,11 @@
 
 .pupil {
   background-color: rgb(36, 16, 6);
-  height: 1.3vmin;
-  width: 1.3vmin;
+  height: 1.5vmin;
+  max-height: 17px;
+  width: 1.5vmin;
+  max-width: 17px;
   border-radius: 50%;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -264,9 +246,83 @@
 .pupil::after{
   content: "";
   display: block;
-  height: 0.5vmin;
-  width: 0.5vmin;
+  height: 0.6vmin;
+  max-height: 8px;
+  width: 0.6vmin;
+  max-width: 8px;
   background-color: white;
   border-radius: 40%;
 }
 
+/* body */
+
+.neck{
+  width: 16.5%;
+  height: 24%;
+  background: var(--skin2);
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5vmin;
+}
+
+.shirt-collar-right,
+.shirt-collar-left{
+  width: 10%;
+  height: 6%;
+  background: var(--shirt);
+ clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
+  top: 61%;
+  left: 58%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+}
+
+.shirt-collar-left{
+  left: 42%;
+   clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+  transform: translate(-50%, -50%) rotate(10deg);
+}
+
+.shirt {
+  width: 75%;
+  height: 34.5%;
+  background: var(--shirt2);
+  border-radius: 50%;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  clip-path: polygon(0% 40%, 40% 10%, 60% 0%, 50% 5%, 50% 5%, 100% 40%, 100% 100%, 0% 100%);
+}
+
+.shirt-front{
+  width: 9%;
+  height: 32%;
+  background-color: var(--shirt3);
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shirt-button-three,
+.shirt-button-two,
+.shirt-button-one{
+  width: 4.5%;
+  height: 4.5%;
+  border-radius: 50%;
+  background-color: var(--button);
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shirt-button-two{
+  top: 75%;
+}
+
+.shirt-button-three{
+  top:88%;
+}
+
+@media only screen and (min-width: 1000px) {
+
+}

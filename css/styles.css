@@ -3,13 +3,17 @@
   --light-blue: #6AC7EC;
   --background-grey: #38405B;
   --light-text: #F0FFFF;
-  --details-text: normal 600 1.125rem "roboto", sans-serif;;
+  --details-text: normal 600 1.125rem "roboto", sans-serif;
   --btn: normal 600 1.125rem "roboto", sans-serif;
+  --box-shadowing: 4px 4px 5px var(--light-blue);
+  --h1: 1.75rem;
+  --intro-text: normal 600 1.5rem "roboto", sans-serif;
+  --h2: 1.5rem;
 }
 
 html{
   scroll-behavior: smooth;
-  scroll-padding-top: 65px;
+  scroll-padding-top: 75px;
 }
 
 body{
@@ -21,12 +25,14 @@ body{
 }
 
 h1{
-  margin-top: 65px;
+  margin: 0px;
+  text-align: center;
+  font-size: var(--h1);
 }
 
 h2{
   margin: 40px 0 20px 0;
-  font-size: 2.5rem;
+  font-size: var(--h2);
 }
 
 h3{
@@ -37,6 +43,7 @@ footer{
   text-align: center;
 }
 
+
 /*-------------- content wrappers -------------*/
 
 .page-wrapper-small,
@@ -45,7 +52,6 @@ footer{
   margin: 0 auto;
   width: 96%;
 }
-
 
 /*-------------- Navigation -------------*/
 /*skip to main content for keyboard users*/
@@ -197,10 +203,31 @@ nav button {
 }
 
 /*------------- Welcome Section ----------------*/
-
 #home{
-  min-height: 50vh;
-  position: relative;
+  margin-top: 100px;
+  
+}
+
+.home-intro{
+  top: 76%;
+  padding: 25px;
+  background-color: var(--dark-blue);
+  box-shadow: var(--box-shadowing);
+  margin-bottom: 30px;
+}
+
+.intro-text{
+  font: var(--intro-text);
+}
+
+/*------------- About Section ---------------*/
+
+#about img{
+  width: 100%;
+}
+
+.about-content{
+  display: grid;
 }
 
 /*------------- Projects ----------------*/
@@ -250,6 +277,7 @@ nav button {
   background-image: url("/images/rainydays.jpg");
 }
 
+.about-details,
 .project-details {
   background-color: var(--dark-blue);
   color: var(--light-text);
@@ -260,13 +288,19 @@ nav button {
 
 .project-details a {
   max-height: 100px;
-  display: inline-block;
+  display: block;
+  padding: 10px;
+  width: fit-content;
   background-color: var(--light-blue);
-  padding: 15px;
   border-radius: 10px;
   text-decoration: none;
   color: var(--dark-blue);
   font: var(--btn);
+}
+
+.project-links{
+  display: flex;
+  justify-content: space-around;
 }
 
 .project-details img{
@@ -278,11 +312,20 @@ nav button {
   margin-top: 0;
 }
 
-/*------------- About Section ---------------*/
-
-
-
 @media only screen and (min-width: 720px) {
+  :root{
+    --dark-blue: #000921;
+    --light-blue: #6AC7EC;
+    --background-grey: #38405B;
+    --light-text: #F0FFFF;
+    --details-text: normal 600 1.125rem "roboto", sans-serif;;
+    --btn: normal 600 1.125rem "roboto", sans-serif;
+    --box-shadowing: 4px 4px 5px var(--light-blue);
+    --h1: 2.75rem;
+    --intro-text: normal 600 2rem "roboto", sans-serif;
+    --h2: 2.5rem;
+  }
+
   /*------ navigation adjustments ------*/
   nav button {
     display: none;
@@ -309,10 +352,36 @@ nav button {
     max-width: 800px;
     width: 90%;
   }
+
   /*home section push down*/
-  #home {
-    min-height: 100vh;
+  #home{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
   }
+
+  .cartoon-me{
+    max-width: 40vw;
+    max-height: 40vw;
+  }
+
+  /* about section */
+  /*just fixing firefox content flash bug poorly*/
+  #about{
+    min-height: 370px;
+  }
+
+  .about-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .about-details{
+    box-shadow: var(--box-shadowing);
+  }
+
   /*Project section animation and setup for bigger screen*/
   .project-content {
     display: grid;
@@ -326,7 +395,7 @@ nav button {
     width: 50%;
     right: 0;
     top: 17%;
-    box-shadow: 4px 4px 5px var(--light-blue);
+    box-shadow: var(--box-shadowing);
     }
 
   .blog-image{
@@ -378,6 +447,13 @@ nav button {
 }
 
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1000px) {
+  :root{
+    --btn: normal 600 1.25rem "roboto", sans-serif;
+  }
 
+  .cartoon-me{
+    max-width: 475px;
+    max-height: 475px;
+  }
 }
