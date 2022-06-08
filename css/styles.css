@@ -22,6 +22,9 @@ body{
   font: var(--details-text);
   color: var(--light-text);
   overflow-x: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 h1{
@@ -31,8 +34,10 @@ h1{
 }
 
 h2{
-  margin: 40px 0 20px 0;
+  margin: 50px 0 20px 0;
   font-size: var(--h2);
+  padding-right: 40px;
+  border-bottom: 3px solid var(--light-blue);
 }
 
 h3{
@@ -54,6 +59,12 @@ footer{
 .page-wrapper-large{
   margin: 0 auto;
   width: 96%;
+}
+
+.content-cont-style{
+  background-color: var(--dark-blue);
+  color: var(--light-text);
+  padding: 15px;
 }
 
 /*-------------- Navigation -------------*/
@@ -219,9 +230,8 @@ nav button {
 .home-intro{
   top: 76%;
   padding: 25px;
-  background-color: var(--dark-blue);
-  box-shadow: var(--box-shadowing);
   margin-bottom: 30px;
+  height: fit-content;
 }
 
 .intro-text{
@@ -230,12 +240,35 @@ nav button {
 
 /*------------- About Section ---------------*/
 
-#about img{
-  width: 100%;
-}
-
 .about-content{
   display: grid;
+}
+
+.skill-container{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skill-opening-p{
+  width: 100%;
+  font-size: var(--details-text);
+}
+
+.skill{
+  width: 50%;
+  text-align: center;
+}
+
+.skill img{
+  margin-top: 30px;
+  height: 80px;
+}
+
+.skill p{
+  margin: 10px 0 30px 0;
 }
 
 /*------------- Projects ----------------*/
@@ -272,15 +305,6 @@ nav button {
   background-image: url("/images/rainydays.jpg");
 }
 
-.about-details,
-.project-details {
-  background-color: var(--dark-blue);
-  color: var(--light-text);
-  height: fit-content;
-  padding: 15px;
-
-}
-
 .project-details a {
   max-height: 100px;
   display: block;
@@ -305,6 +329,13 @@ nav button {
 
 .project-details :first-child {
   margin-top: 0;
+}
+
+@media only screen and (min-width: 500px) {
+  .skill{
+    width: 33.3%;
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 720px) {
@@ -355,33 +386,32 @@ nav button {
     width: 90%;
   }
 
+  .content-cont-style{
+    box-shadow: var(--box-shadowing);
+  }
   /*------home section push down------*/
   #home{
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 40px;
-  }
-
-  .cartoon-me{
-    max-width: 40vw;
-    max-height: 40vw;
+    align-items: center;
   }
 
   /*---------about section ------*/
-  /*just fixing firefox content flash bug poorly*/
   #about{
     min-height: 370px;
   }
 
-  .about-content{
+  /* .about-content{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-  }
+  } */
 
-  .about-details{
-    box-shadow: var(--box-shadowing);
+  .skill{
+    width: 25%;
+    text-align: center;
   }
 
   /*Project section animation and setup for bigger screen*/
@@ -397,7 +427,6 @@ nav button {
     width: 50%;
     right: 0;
     top: 17%;
-    box-shadow: var(--box-shadowing);
     }
 
   .blog-image{
@@ -447,15 +476,14 @@ nav button {
   }
 
 }
-
+@media only screen and (min-width: 1000px) {
+  .skill{
+    width: 20%;
+  }
+}
 
 @media only screen and (min-width: 1000px) {
   :root{
     --btn: normal 600 1.25rem "roboto", sans-serif;
-  }
-
-  .cartoon-me{
-    max-width: 475px;
-    max-height: 475px;
   }
 }

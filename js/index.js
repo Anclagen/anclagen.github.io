@@ -62,7 +62,7 @@ body.addEventListener("mousemove", (event) => {
   }
   console.log(x, y)
 
-  //let rotate = 90;
+  //let rotation = 90;
 
   eyes.forEach(eye => {
     eye.style.transform = `translateY(${y}px)  translateX(${x}px)`;

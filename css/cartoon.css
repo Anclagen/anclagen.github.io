@@ -1,4 +1,4 @@
-
+/*just a little fun in css*/
 .cartoon-me {
   --skin: rgb(255, 199, 161);
   --skin3: rgb(248, 189, 150);
@@ -24,7 +24,7 @@
   position: absolute;
   box-sizing: border-box;
 }
-
+/*face contains, nose and eyebrows */
 .face{
   top: 33%;
   left: 50%;
@@ -61,6 +61,7 @@
   transform: rotateY(180deg);
 }
 
+/*mouth stubble*/
 .stubble{
   top: 48%;
   left: 50%;
@@ -82,7 +83,6 @@
   background: rgb(255, 72, 0);
   transition: all 300ms smooth;
 }
-
 
 /* ears */
 .ear-left,
@@ -324,6 +324,16 @@
   top:88%;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 720px) {
+  .cartoon-me{
+    max-width: 40vw;
+    max-height: 40vw;
+  }
+}
 
+@media only screen and (min-width: 1000px) {
+  .cartoon-me{
+    max-width: 475px;
+    max-height: 475px;
+  }
 }
