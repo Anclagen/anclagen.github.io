@@ -60,10 +60,7 @@ body.addEventListener("mousemove", (event) => {
   }else if(y < -11){
     y=-11
   }
-  console.log(x, y)
-
-  //let rotation = 90;
-
+  
   eyes.forEach(eye => {
     eye.style.transform = `translateY(${y}px)  translateX(${x}px)`;
   })         
