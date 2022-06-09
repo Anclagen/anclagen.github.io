@@ -54,7 +54,6 @@ footer{
 
 /*-------------- content wrappers -------------*/
 
-
 .page-wrapper-small,
 .page-wrapper-medium,
 .page-wrapper-large{
@@ -62,6 +61,7 @@ footer{
   width: 92%;
 }
 
+/*-------------- container styling -------------*/
 .content-cont-style{
   background-color: var(--dark-blue);
   color: var(--light-text);
@@ -229,7 +229,6 @@ nav button {
 }
 
 .home-intro{
-  top: 76%;
   padding: 25px;
   margin-bottom: 30px;
   height: fit-content;
@@ -240,10 +239,6 @@ nav button {
 }
 
 /*------------- About Section ---------------*/
-
-.about-content{
-  display: grid;
-}
 
 .skill-container{
   width: 100%;
@@ -398,6 +393,11 @@ nav button {
   padding: 10px;
 }
 
+textarea {
+  height: 10rem;
+  resize: none;
+}
+
 #contact-form input[type="submit"]{
   margin: 30px auto;
   border: none;
@@ -436,7 +436,6 @@ nav button {
 @media only screen and (min-width: 500px) {
   .skill{
     width: 33.3%;
-    text-align: center;
   }
 }
 
@@ -480,7 +479,6 @@ nav button {
   .page-wrapper-medium{
     max-width: 1000px;
     width: 90%;
-    margin: 0 auto;
   }
   
   .page-wrapper-small{
@@ -505,15 +503,8 @@ nav button {
     min-height: 370px;
   }
 
-  /* .about-content{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  } */
-
   .skill{
     width: 25%;
-    text-align: center;
   }
 
   /*Project section animation and setup for bigger screen*/
@@ -545,7 +536,6 @@ nav button {
 
   .project-card{
     position: relative;
-    margin-top: 50px;
   }
 
   .project-card h3{
@@ -576,8 +566,8 @@ nav button {
     opacity: 1;
     transform: translate(0, 0);
   }
-
 }
+
 @media only screen and (min-width: 1000px) {
   .skill{
     width: 20%;

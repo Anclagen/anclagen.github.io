@@ -3,7 +3,7 @@
 window.addEventListener("scroll", updateNavActiveLink);
 const sections = document.querySelectorAll("#home, #about, #projects, #contact");
 const navLinks = document.querySelectorAll(".nav-links li");
-updateNavActiveLink()
+updateNavActiveLink();
 
 //https://dev.to/areeburrub/change-nav-link-s-style-as-you-scroll-4p62
 
@@ -42,7 +42,7 @@ function openCloseMenu(){
 }
 /*----------------- silly eyes ---------------------*/
 //https://www.geeksforgeeks.org/design-smiley-face-eyes-that-follow-mouse-cursor-using-css-and-js/
-const body = document.querySelector("body")
+const body = document.querySelector("body");
 const eyes = document.querySelectorAll(".iris");
 
 body.addEventListener("mousemove", (event) => {
@@ -50,20 +50,20 @@ body.addEventListener("mousemove", (event) => {
   let y = -(window.innerHeight / 2 - event.pageY) / 50;
   //preventing white eyes demonic possession
   if(x > 18){
-    x=18
+    x=18;
   }else if(x < -10){
-    x=-10
+    x=-10;
   }
 
   if(y > 7){
-    y=7
+    y=7;
   }else if(y < -11){
-    y=-11
+    y=-11;
   }
 
   eyes.forEach(eye => {
     eye.style.transform = `translateY(${y}px)  translateX(${x}px)`;
-  })         
+  });   
 }); 
 
 /*------------ Display content on scroll ----------*/
@@ -74,16 +74,16 @@ const fadeInOnObservation = new IntersectionObserver(
   function(items, fadeInOnObservation){
     items.forEach(item => {
       if(!item.isIntersecting){
-        return
+        return;
       }else{
         item.target.classList.add("observed-item");
         fadeInOnObservation.unobserve(item.target);
       }
-    })
+    });
   }, {threshold:0.6}
 );
 
 projectItems.forEach(project => {
-  fadeInOnObservation.observe(project)
+  fadeInOnObservation.observe(project);
   }
 )
