@@ -43,6 +43,7 @@
   top: 46%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-clip-path: polygon(56% 73%, 44% 82%, 11% 78%, 13% 87%, 22% 95%, 46% 98%, 65% 97%, 78% 94%, 85% 82%, 61% 1%);
   clip-path: polygon(56% 73%, 44% 82%, 11% 78%, 13% 87%, 22% 95%, 46% 98%, 65% 97%, 78% 94%, 85% 82%, 61% 1%);
 }
 
@@ -272,6 +273,7 @@
   width: 10%;
   height: 6%;
   background: var(--shirt);
+ -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
  clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
   top: 61%;
   left: 58%;
@@ -280,6 +282,7 @@
 
 .shirt-collar-left{
   left: 42%;
+  -webkit-clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
    clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
   transform: translate(-50%, -50%) rotate(10deg);
 }
@@ -292,6 +295,7 @@
   top: 57%;
   left: 50%;
   transform: translate(-50%, 0);
+  -webkit-clip-path: polygon(0% 40%, 40% 10%, 60% 0%, 50% 5%, 50% 5%, 100% 40%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 40%, 40% 10%, 60% 0%, 50% 5%, 50% 5%, 100% 40%, 100% 100%, 0% 100%);
 }
 
