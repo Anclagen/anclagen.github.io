@@ -50,7 +50,7 @@ function addValidation(){
     formData.append("your-subject", subject.value);
     formData.append("your-message", message.value);
     formData.append("your-email", email.value);
-    
+
     //post form
     postQuery(formData, formReporting);
 
@@ -123,19 +123,19 @@ function addValidation(){
 
 /*------------------------------ Form Validation Functions ----------------------------------*/
 
-export function createErrorMessage(container){
+function createErrorMessage(container){
   container.innerHTML = `<div class="error-submission">
                           <p> An error occurred while submitting the data. </p>
                           <p> Please try again.</p>
                         </div>`;
 }
 
-export function resetBorders(input){
+function resetBorders(input){
   input.style.border = "none";
 }
 
 //validates text inputs
-export function validatedInputLength(input, length, errorContainer) {
+function validatedInputLength(input, length, errorContainer) {
   if (input.value.trim().length > length) {
     errorContainer.innerText = "";
     input.style.border ="3px solid green";
@@ -148,7 +148,7 @@ export function validatedInputLength(input, length, errorContainer) {
 }
 
 //validate emails
-export function validateEmailInput(email, errorContainer) {
+function validateEmailInput(email, errorContainer) {
   const emailRegEx = /^([a-z0-9_\.\+-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
   const validateEmail = emailRegEx.test(email.value);
   if (validateEmail){ 
@@ -164,7 +164,7 @@ export function validateEmailInput(email, errorContainer) {
 
 
 //Validators without error messaging
-export function validateLength(input, length) {
+function validateLength(input, length) {
   if (input.value.trim().length > length) {
     return true;
   } else {
@@ -172,7 +172,7 @@ export function validateLength(input, length) {
   }
 }
 
-export function validateEmail(email) {
+function validateEmail(email) {
   const emailRegEx = /^([a-z0-9_\.\+-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
   const validateEmail = emailRegEx.test(email.value);
   if (validateEmail){ 
