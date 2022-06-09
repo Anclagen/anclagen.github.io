@@ -54,6 +54,7 @@ footer{
 
 /*-------------- content wrappers -------------*/
 
+
 .page-wrapper-small,
 .page-wrapper-medium,
 .page-wrapper-large{
@@ -336,6 +337,8 @@ nav button {
   margin-bottom: 50px;
 }
 
+
+
 .contact-methods {
   width: 100%;
   box-sizing: border-box;
@@ -356,6 +359,82 @@ nav button {
 .contact-methods img {
   height: 50px;
 }
+
+.contact-form{
+  margin: 30px auto;
+}
+.button-center{
+  text-align: center;
+}
+
+.button-center button{
+  border: none;
+  max-height: 100px;
+  padding: 10px;
+  width: fit-content;
+  background-color: var(--light-blue);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--dark-blue);
+  font: var(--btn);
+  cursor: pointer;
+}
+
+
+
+#contact-form{
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+#contact-form label{
+  margin: 20px 0 5px 0;
+}
+
+#contact-form input,
+#contact-form textarea{
+  border-radius: 5px;
+  font: var(--details-text);
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+#contact-form input[type="submit"]{
+  margin: 30px auto;
+  border: none;
+  width: fit-content;
+  min-width: 100px;
+  font: var(--btn);
+  color:var(--dark-blue);
+  background-color: var(--light-blue);
+  cursor: pointer;
+}
+
+#contact-form input[type="submit"]:hover,
+.button-center button:hover,
+.project-details a:hover{
+  transition: 0.3s;
+  box-shadow: 4px 4px 5px var(--background-grey);
+}
+
+#contact-form input[type="submit"]:disabled{
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.error-submission,
+.success{
+  border: 5px solid #18cc96;
+  display: block;
+  padding: 15px;
+}
+
+.error-submission{
+  border: 5px solid red;
+}
+
 
 @media only screen and (min-width: 500px) {
   .skill{

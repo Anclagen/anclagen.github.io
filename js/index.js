@@ -11,7 +11,7 @@ function updateNavActiveLink(){
   let currentPosition = "";
   sections.forEach((section) => {
     const currentSection = section.offsetTop;
-    if(window.scrollY >= currentSection - 150){
+    if(window.scrollY >= currentSection - 170){
       currentPosition = section.getAttribute("id");
     }
   });
@@ -60,7 +60,7 @@ body.addEventListener("mousemove", (event) => {
   }else if(y < -11){
     y=-11
   }
-  
+
   eyes.forEach(eye => {
     eye.style.transform = `translateY(${y}px)  translateX(${x}px)`;
   })         
@@ -88,3 +88,46 @@ projectItems.forEach(project => {
   }
 )
 
+/*------------- Contact Form -------------*/
+
+const displayFormBtn = document.querySelector(".display-form");
+const contactFormContainer = document.querySelector(".contact-form");
+
+displayFormBtn.addEventListener("click", createForm);
+
+function createForm(){
+  contactFormContainer.innerHTML = `<form id="contact-form">
+                                    <div id="form-reporting-container"></div>
+                                    <label for="your-name">Name*</label>
+                                    <input type="text" id="your-name" name="name" />
+                                    <div class="error" id="error-name"></div>
+                                    <label for="your-email">E-mail*</label>
+                                    <input type="email" id="your-email" name="email" />
+                                    <div class="error" id="error-email"></div>
+                                    <label for="your-subject">Subject*</label>
+                                    <input type="text" id="your-subject" name="subject" />
+                                    <div class="error" id="error-subject"></div>
+                                    <label for="your-message">Message*</label>
+                                    <textarea id="your-message" name="message"></textarea>
+                                    <div class="error" id="error-message"></div>
+                                    <input type="submit" value="Submit" class="cta form-submit-btn" id="contact-form-submit" disabled />
+                                    </form>`;
+  addValidation();
+}
+
+function addValidation(){
+  //get variables
+  const contactForm = document.querySelector("#contact-form");
+  const contactFormSubmit = document.querySelector("#contact-form-submit");
+  const fullname = document.querySelector("#your-name");
+  const errorName = document.querySelector("#error-name");
+  const errorEmail = document.querySelector("#error-email");
+  const subject = document.querySelector("#your-subject");
+  const errorSubject = document.querySelector("#error-subject");
+  const message = document.querySelector("#your-message");
+  const errorMessage= document.querySelector("#error-message");
+  const formReporting = document.querySelector("#form-reporting-container");
+
+
+
+}
