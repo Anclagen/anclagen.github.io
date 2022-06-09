@@ -34,7 +34,7 @@ h1{
 }
 
 h2{
-  margin: 50px 0 20px 0;
+  margin: 80px 0 20px 0;
   font-size: var(--h2);
   padding-right: 40px;
   border-bottom: 3px solid var(--light-blue);
@@ -337,14 +337,13 @@ nav button {
   margin-bottom: 50px;
 }
 
-
-
 .contact-methods {
   width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .contact-methods a{
@@ -379,8 +378,6 @@ nav button {
   font: var(--btn);
   cursor: pointer;
 }
-
-
 
 #contact-form{
   display: flex;
