@@ -3,7 +3,7 @@
   --light-blue: #6AC7EC;
   --background-grey: #38405B;
   --light-text: #F0FFFF;
-  --details-text: normal 600 1.125rem "roboto", sans-serif;
+  --details-text: normal 500 1.125rem "roboto", sans-serif;
   --btn: normal 600 1.125rem "roboto", sans-serif;
   --box-shadowing: 4px 4px 5px var(--light-blue);
   --h1: 1.75rem;
@@ -413,7 +413,7 @@ nav button {
 .button-center button:hover,
 .project-details a:hover{
   transition: 0.3s;
-  box-shadow: 4px 4px 5px var(--background-grey);
+  box-shadow: 0px 0px 10px var(--light-text);
 }
 
 #contact-form input[type="submit"]:disabled{
