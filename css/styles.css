@@ -1,11 +1,11 @@
 :root{
-  --dark-blue: #000921;
-  --light-blue: #6AC7EC;
-  --background-grey: #38405B;
-  --light-text: #F0FFFF;
+  --dark-blue: #0B0C10;
+  --light-blue: #66FCF1;
+  --background-grey: #1F2833;
+  --light-text: #d4d5d6;
   --details-text: normal 500 1.125rem "roboto", sans-serif;
   --btn: normal 600 1.125rem "roboto", sans-serif;
-  --box-shadowing: 4px 4px 5px var(--light-blue);
+  --box-shadowing: 1px 1px 1px var(--light-blue);
   --h1: 1.75rem;
   --intro-text: normal 600 1.5rem "roboto", sans-serif;
   --h2: 1.5rem;
@@ -20,7 +20,7 @@ body{
   margin: 0;
   background-color: var(--background-grey);
   font: var(--details-text);
-  color: var(--light-text);
+  color:var(--light-text);
   overflow-x: hidden;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -37,7 +37,7 @@ h2{
   margin: 80px 0 20px 0;
   font-size: var(--h2);
   padding-right: 40px;
-  border-bottom: 3px solid var(--light-blue);
+  border-bottom: 3px solid var(--dark-blue);
 }
 
 h3{
@@ -66,6 +66,7 @@ footer{
   background-color: var(--dark-blue);
   color: var(--light-text);
   padding: 15px;
+  border-radius: 10px;
 }
 
 /*-------------- Navigation -------------*/
@@ -99,7 +100,7 @@ footer{
 
 header{
   width: 100%;
-  background-color: #060D29;
+  background-color: var(--dark-blue);
   height: 65px;
   position: fixed;
   top: 0;
@@ -131,7 +132,7 @@ header{
 .nav-links li{
   margin: 0;
   display: block;
-  background-color: #060D29;
+  background-color:var(--dark-blue);
   padding: 10px;
   width: 100%;
 }
@@ -301,6 +302,15 @@ nav button {
   background-image: url("/images/rainydays.jpg");
 }
 
+.social-image{
+  background-image: url("/images/SoSocial.jpg");
+}
+
+.auction-image{
+  background-image: url("/images/forgotten_treasures.jpg");
+}
+
+
 .project-details a {
   max-height: 100px;
   display: block;
@@ -441,10 +451,6 @@ textarea {
 
 @media only screen and (min-width: 720px) {
   :root{
-    --dark-blue: #000921;
-    --light-blue: #6AC7EC;
-    --background-grey: #38405B;
-    --light-text: #F0FFFF;
     --details-text: normal 600 1.125rem "roboto", sans-serif;;
     --btn: normal 600 1.125rem "roboto", sans-serif;
     --box-shadowing: 4px 4px 5px var(--light-blue);
