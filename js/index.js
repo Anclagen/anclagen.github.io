@@ -62,3 +62,16 @@ const fadeInOnObservation = new IntersectionObserver(
 projectItems.forEach((project) => {
   fadeInOnObservation.observe(project);
 });
+
+/*------------ Contact buttons -----------*/
+// just a little fun
+document.querySelector(".contact-methods").onmousemove = (e) => {
+  for (const link of document.querySelectorAll("a")) {
+    const rect = link.getBoundingClientRect(),
+      x = e.clientX - rect.left,
+      y = e.clientY - rect.top;
+
+    link.style.setProperty("--mouse-x", `${x}px`);
+    link.style.setProperty("--mouse-y", `${y}px`);
+  }
+};

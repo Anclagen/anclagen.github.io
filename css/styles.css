@@ -359,20 +359,48 @@ nav button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 30px;
 }
 
 .contact-methods a{
+  position: relative;
   color: var(--light-text);
   text-decoration: none;
   font: var(--btn);
   display: block;
-  width: 33%;
+  max-width: 33%;
+  aspect-ratio: 1;
   text-align: center;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: var(--background-grey);
 }
 
 .contact-methods img {
   height: 50px;
+}
+/* just a little fun*/
+.contact-methods a:hover:before {
+  opacity: 1;
+}
+
+.contact-methods a::before{
+  border-radius: 20px;
+  content: "";
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  transition: opacity 500ms;
+  width: 100%;
+  background: radial-gradient(
+    200px circle at var(--mouse-x) var(--mouse-y), 
+    rgba(255, 255, 255, 0.09),
+    transparent 40%
+  );
+  z-index: 3;
 }
 
 .contact-form{
