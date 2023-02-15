@@ -233,12 +233,17 @@ nav button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
+  display: grid;
+  align-items: center;
+  text-align: center;
 }
 
 .home-intro{
   padding: 25px;
   margin-bottom: 30px;
   height: fit-content;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .home-intro img {
@@ -533,12 +538,6 @@ textarea {
 
   .content-cont-style{
     box-shadow: var(--box-shadowing);
-  }
-  /*------home section push down------*/
-  #home{
-    display: grid;
-    align-items: center;
-    text-align: center;
   }
 
   /*---------about section ------*/
