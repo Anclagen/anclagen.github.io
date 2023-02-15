@@ -40,31 +40,6 @@ function openCloseMenu() {
   hamBotLine.classList.toggle("menu-open-rotate3");
   hamMidLine.classList.toggle("menu-open-transparent");
 }
-/*----------------- silly eyes ---------------------*/
-//https://www.geeksforgeeks.org/design-smiley-face-eyes-that-follow-mouse-cursor-using-css-and-js/
-const body = document.querySelector("body");
-const eyes = document.querySelectorAll(".iris");
-
-body.addEventListener("mousemove", (event) => {
-  let x = -(window.innerWidth / 2 - event.pageX) / 50;
-  let y = -(window.innerHeight / 2 - event.pageY) / 50;
-  //preventing white eyes demonic possession
-  if (x > 13) {
-    x = 13;
-  } else if (x < -30) {
-    x = -30;
-  }
-
-  if (y > 7) {
-    y = 7;
-  } else if (y < -7) {
-    y = -7;
-  }
-
-  eyes.forEach((eye) => {
-    eye.style.transform = `translateY(${y}px)  translateX(${x}px)`;
-  });
-});
 
 /*------------ Display content on scroll ----------*/
 
