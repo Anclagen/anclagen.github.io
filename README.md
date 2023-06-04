@@ -1,25 +1,80 @@
-# Version 1. Portfolio Website
+# Svelte TS Starter
 
+This Svelte TS starter template provides a foundation for developing with Svelte and Vite, including preconfigured support for Typescript, TailwindCSS, Flowbite-Svelte, and Svelte-Spa-Router. Additionally, it includes a sample implementation of fetching data from a backend API, making it easy to integrate with your own server-side infrastructure.
 
-![Site Preview](/site_preview.jpg)
-First version of portfolio website
+- Vite
+- Svelte
+- Typescript
+- Tailwind CSS
+- Flowbite-Svelte
+- Svelte-Spa-Router
 
-## Description
-My inital version of a portfolio website using the skills I have learned during the first year of studying front end developement. 
+## Installation
 
-## Built With
+```bash
+git clone git@github.com:shinokada/svelte-ts-starter.git my-app
+cd my-app
+pnpm i
+```
 
-- ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&logoWidth=30&style=plastic)
-- ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&logoWidth=30&style=plastic)
-- ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=white&logoWidth=30&style=plastic)
+## Backend API env value
 
-## Contributing
+Update your backend API value in `.env`:
 
-This project requires no contrubutions.
+```text
+API_ENDPOINT=http://localhost:3000/api
+API_SECRET=1234
+```
 
-## Contact
+## Start a local server
 
-[<img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white">](https://discordapp.com/users/178264761199362048)
+```bash
+npm run dev
+```
 
+## How to use this for GitHub page
 
-[<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">](https://www.linkedin.com/in/alexander-barrett-64568a47/)
+There is the `github-page` branch. Please note that it is not gh-pages.
+Checkout to this branch and install packages, build and deploy.
+
+```
+git checkout github-page
+pnpm i
+npm run build
+npm run deploy
+```
+
+This will deploy your GitHub page to `https://<username>.github.io/<repository name>` URL. Don’t forget to change the username and repository name to your personal Github username and repository.
+It may take a couple of minutes. You can check the progress in GitHub Actions tab.
+
+## DIY GitHub pages
+
+```bash
+pnpm i -D gh-pages
+```
+
+Add the following to the package.json scripts:
+
+```json
+ "deploy": "npx gh-pages -d dist"
+```
+
+Update vite.config.ts
+
+```
+import { defineConfig } from 'vite'
+import { svelte } from '@sveltejs/vite-plugin-svelte'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  base: "/svelte-ts-starter/",
+  plugins: [svelte()],
+})
+```
+
+Build and deploy:
+
+```bash
+npm run build
+npm run deploy
+```
