@@ -12,10 +12,10 @@
 	let showIndicators = false;
 </script>
 
-<Button
+<button
 	on:click={() => (open = true)}
-	class="transition-all duration-300 w-full mt-5 bg-primary border border-primary dark:border-light-primary dark:bg-light-primary dark:text-primary text-light-primary hover:bg-light-primary hover:text-primary dark:hover:bg-primary dark:hover:text-light-primary"
-	>More Details</Button
+	class="transition-all duration-300 w-full mt-5 bg-primary border border-primary dark:border-light-primary dark:bg-light-primary dark:text-primary text-light-primary hover:bg-light-primary hover:text-primary dark:hover:bg-primary dark:hover:text-light-primary text-center font-medium focus:ring-4 focus:outline-none inline-flex items-center justify-center px-5 py-2.5 text-md text-white focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg "
+	>More Details</button
 >
 
 <Modal id={project.slug} title={project.title} bind:open size="lg" backdropClasses='bg-light-primary bg-opacity-50 dark:bg-backgroundgrey' color="purple">
@@ -27,7 +27,7 @@
 		{showIndicators}
 	/>
 	{#each project.content as paragraph}
-		<p class="mb-3 mx-5">{paragraph}</p>
+		<p class="mb-3 mx-5 text-gray-900">{paragraph}</p>
 	{/each}
 	<div class="flex mx-5">
 		{#each stack as skill}
