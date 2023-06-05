@@ -6,7 +6,7 @@
 
 <DividerLight id="skills" />
 <section class="dark:text-light-primary">
-	<div class="mx-auto mb-16 p-6 smd:p-10 bg-light-primary dark:dark:bg-background-grey mx-auto">
+	<div class="mx-auto mb-16 p-6 smd:p-10 mx-auto">
 		<div class="max-w-screen-lg mx-auto">
 			<Heading
 				tag="h2"
