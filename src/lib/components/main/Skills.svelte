@@ -13,7 +13,7 @@
       <ul class=" flex auto-cols-auto flex-wrap justify-center">
         {#each skills as skill}
           <li class="w-28 text-center px-4 py-4">
-            <img class="mx-auto skill-img rounded-lg" src={skill.imgSrc} alt={skill.name + " icon"} />
+            <img class="mx-auto skill-img rounded-lg" src={skill.imgSrc} alt={skill.name + " icon"} aria-hidden="true" />
             <p>{skill.name}</p>
           </li>
         {/each}
