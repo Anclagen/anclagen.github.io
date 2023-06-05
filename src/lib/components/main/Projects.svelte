@@ -1,9 +1,10 @@
 <script lang="ts">
-  import { Heading, Card, Button, ButtonGroup, Radio } from "flowbite-svelte";
+  import { Heading, Card, Radio } from "flowbite-svelte";
   import { projects } from "../../data/projects";
   import DividerLight from "../dividers/DividerLight.svelte";
   import Link from "../buttons/Link.svelte";
   import Modal from "../modal/Modal.svelte";
+  import type { Project } from "../../data/projects";
 
   let filter = "All";
   let filteredProjects = projects;
@@ -14,7 +15,7 @@
 <section>
   <div class="mx-auto p-6 smd:p-10 bg-light-primary dark:bg-background-grey mb-16">
     <div class="max-w-screen-xl mx-auto">
-      <Heading tag="h2" class="text-5xl font-extrabold text-gray-900 dark:text-white w-full text-center text-primary dark:text-light-primary mb-10">Recent Projects</Heading>
+      <Heading tag="h2" class="text-5xl font-extrabold text-gray-900 dark:text-white w-full text-center text-primary dark:text-light-primary mb-10">Projects</Heading>
       <!-- Filters based on stack -->
       <div class="mx-auto mb-5 w-fit">
         <p class="mb-4 font-semibold text-gray-900 dark:text-white">{filter} Projects</p>
@@ -23,7 +24,7 @@
           <li class="w-full"><Radio name="hor-list" bind:group={filter} color="purple" value="Svelte" class="p-1 smd:p-3  dark:text-gray-900 ">Svelte/TypeScript</Radio></li>
           <li class="w-full"><Radio name="hor-list" bind:group={filter} color="purple" value="React" class="p-1 smd:p-3 dark:text-gray-900 ">React</Radio></li>
           <li class="w-full"><Radio name="hor-list" bind:group={filter} color="purple" value="JavaScript" class="p-1 smd:p-3 dark:text-gray-900 ">JavaScript</Radio></li>
-          <li class="w-full"><Radio name="hor-list" bind:group={filter} color="purple" value="Express" class="p-1 smd:p-3 dark:text-gray-900 ">Express</Radio></li>
+          <!-- <li class="w-full"><Radio name="hor-list" bind:group={filter} color="purple" value="Express" class="p-1 smd:p-3 dark:text-gray-900 ">Express</Radio></li> -->
         </ul>
       </div>
       <div class="flex flex-wrap justify-center">
