@@ -18,7 +18,7 @@
 	>More Details</Button
 >
 
-<Modal id={project.slug} title={project.title} bind:open size="lg">
+<Modal id={project.slug} title={project.title} bind:open size="lg" backdropClasses='bg-light-primary bg-opacity-50 dark:bg-backgroundgrey' color="purple">
 	<Carousel
 		images={project.images}
 		divClass="overflow-hidden relative rounded-lg"
