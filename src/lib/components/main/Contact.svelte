@@ -12,10 +12,10 @@
         <img class="rounded-3xl w-fit shadow-md dark:shadow-highlights" src="/assets/images/leos_all_ears.jpg" alt="My Dog Leo" />
       </div>
       <div class="md: basis-8/12 p-3 mx-auto text-center">
-        <div class="mb-5">
+        <div class="mb-5 md:mt-6">
           <p>Want to get in touch were all ears!</p>
         </div>
-        <div class="flex justify-evenly p-2 rounded-xl dark:bg-light-primary dark:text-gray-900">
+        <div class="flex justify-evenly p-2 pt-3 rounded-xl dark:bg-light-primary dark:text-gray-900">
           <a href="mailto:alexanderbarrett189@gmail.com" rel="noopener noreferrer" target="_blank">
             <img src="/assets//images/tool_icons/gmail.png" alt="Gmail icon" aria-hidden="true" class="w-16 h-16" />
             Gmail</a
