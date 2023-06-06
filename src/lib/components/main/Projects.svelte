@@ -20,11 +20,11 @@
       <div class="mx-auto mb-5 w-fit">
         <p class="mb-4 font-semibold text-gray-900 dark:text-white">{filter} Projects</p>
         <ul class="items-center w-full rounded-lg border border-primary smd:flex dark:bg-light-primary dark:border-primary divide-x divide-primary dark:divide-primary">
-          <li class="w-full"><Radio name="hor-list" bind:group={filter} color="purple" value="All" class="p-1 smd:p-3 dark:text-gray-900 ">All</Radio></li>
-          <li class="w-full"><Radio name="hor-list" bind:group={filter} color="purple" value="Svelte" class="p-1 smd:p-3  dark:text-gray-900 ">Svelte/TypeScript</Radio></li>
-          <li class="w-full"><Radio name="hor-list" bind:group={filter} color="purple" value="React" class="p-1 smd:p-3 dark:text-gray-900 ">React</Radio></li>
-          <li class="w-full"><Radio name="hor-list" bind:group={filter} color="purple" value="JavaScript" class="p-1 smd:p-3 dark:text-gray-900 ">JavaScript</Radio></li>
-          <!-- <li class="w-full"><Radio name="hor-list" bind:group={filter} color="purple" value="Express" class="p-1 smd:p-3 dark:text-gray-900 ">Express</Radio></li> -->
+          <li class="w-full"><Radio name="hor-list" bind:group={filter} color="purple" value="All" class="p-1 smd:p-3 !dark:text-gray-900 ">All</Radio></li>
+          <li class="w-full"><Radio name="hor-list" bind:group={filter} color="purple" value="Svelte" class="p-1 smd:p-3  !dark:text-gray-900 ">Svelte/TypeScript</Radio></li>
+          <li class="w-full"><Radio name="hor-list" bind:group={filter} color="purple" value="React" class="p-1 smd:p-3 !dark:text-gray-900 ">React</Radio></li>
+          <li class="w-full"><Radio name="hor-list" bind:group={filter} color="purple" value="JavaScript" class="p-1 smd:p-3 !dark:text-gray-900 ">JavaScript</Radio></li>
+          <!-- <li class="w-full"><Radio name="hor-list" bind:group={filter} color="purple" value="Express" class="p-1 smd:p-3 !dark:text-gray-900 ">Express</Radio></li> -->
         </ul>
       </div>
       <div class="flex flex-wrap justify-center">
