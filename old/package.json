@@ -1,0 +1,26 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anclagen/anclagen.github.io.git"
+  },
+  "keywords": [
+    "Alexander",
+    "Barrett",
+    "Portfolio",
+    "Projects",
+    "About"
+  ],
+  "author": "Alexander Barrett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anclagen/anclagen.github.io/issues"
+  },
+  "homepage": "https://github.com/Anclagen/anclagen.github.io#readme"
+}
