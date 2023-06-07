@@ -13,7 +13,7 @@
       </div>
       <div class="md: basis-8/12 p-3 mx-auto text-center">
         <div class="mb-5 md:mt-6">
-          <p>Want to get in touch were all ears!</p>
+          <p>Want to get in touch? I'm all ears!</p>
         </div>
         <div class="flex justify-evenly p-2 pt-3 rounded-xl dark:bg-light-primary dark:text-gray-900">
           <a href="mailto:alexanderbarrett189@gmail.com" rel="noopener noreferrer" target="_blank">
