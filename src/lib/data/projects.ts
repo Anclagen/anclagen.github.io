@@ -60,7 +60,7 @@ export const projects: Project[] = [
       },
     ],
     liveUrl: null,
-    github: "https://github.com/Anclagen/-mollify",
+    github: "https://github.com/Fermain/-mollify",
     stack: ["Skeleton", "TypeScript", "Svelte", "SvelteKit", "Tailwind", "Vite"],
   },
   {
