@@ -35,6 +35,9 @@
               {project.description}
             </p>
             <div class="my-2 flex justify-evenly">
+              {#if project.realSite}
+                <Link href={project.realSite}>Live Site</Link>
+              {/if}
               {#if project.liveUrl}
                 <Link href={project.liveUrl}>Live Demo</Link>
               {/if}

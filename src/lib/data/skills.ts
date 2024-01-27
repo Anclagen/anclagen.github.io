@@ -14,6 +14,7 @@ export const skills: Skill[] = [
   { name: "JavaScript", imgSrc: "https://skillicons.dev/icons?i=javascript" },
   { name: "TypeScript", imgSrc: "https://skillicons.dev/icons?i=typescript" },
   { name: "React", imgSrc: "https://skillicons.dev/icons?i=react" },
+  { name: "Next", imgSrc: "https://skillicons.dev/icons?i=next" },
   { name: "Svelte", imgSrc: "https://skillicons.dev/icons?i=svelte" },
   { name: "Node", imgSrc: "https://skillicons.dev/icons?i=nodejs" },
   { name: "Express", imgSrc: "https://skillicons.dev/icons?i=express" },

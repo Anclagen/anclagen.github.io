@@ -6,11 +6,64 @@ export type Project = {
   imageSrc: string;
   images: { id: number; name: string; imgurl: string; attribution: string }[];
   liveUrl?: string;
+  realSite?: string;
   github?: string;
   stack: string[];
 };
 
 export const projects: Project[] = [
+  {
+    title: "Quack Recruitment & Training",
+    slug: "quackrecruitment",
+    description: "Quack Recruitment & Training is a UK based recruitment agency.",
+    content: [
+      "Quack Recruitment & Training is a UK based recruitment agency specialising in the supply of temporary and permanent staff to the logistics, sales, administration, food processing and industrial sectors.",
+      "The site was designed in figma, then built using a static Next.js setup and deployed to the clients domain on Ionos. The site is fully responsive and uses a WordPress installation as a form handler.",
+    ],
+    imageSrc: "/assets/images/site_cards/quackrecruitment.jpg",
+    images: [
+      {
+        id: 0,
+        name: "Quack Device Example Mockup",
+        imgurl: "/assets/images/Mockups/quack-mockup-small.jpg",
+        attribution: "Quack Device Mockup",
+      },
+      {
+        id: 1,
+        name: "Quack Recruitment Page",
+        imgurl: "/assets/images/quackrecruitment/recruitment-page.jpg",
+        attribution: "Recruitment Page",
+      },
+      {
+        id: 2,
+        name: "Quack Training Page",
+        imgurl: "/assets/images/quackrecruitment/training.jpg",
+        attribution: "Training Page",
+      },
+      {
+        id: 3,
+        name: "Quack Register Page",
+        imgurl: "/assets/images/quackrecruitment/register.jpg",
+        attribution: "Register Page",
+      },
+      {
+        id: 4,
+        name: "Quack Contact Page",
+        imgurl: "/assets/images/quackrecruitment/contact.jpg",
+        attribution: "Contact Page",
+      },
+      {
+        id: 5,
+        name: "Quack Course Page",
+        imgurl: "/assets/images/quackrecruitment/course.jpg",
+        attribution: "Course Page",
+      },
+    ],
+    realSite: "https://quackrecruitmentandtraining.co.uk/",
+    liveUrl: null,
+    github: "https://github.com/Anclagen-Quackers/quackrecruitment",
+    stack: ["JavaScript", "React", "Tailwind", "Next"],
+  },
   {
     title: "Mollify",
     slug: "mollify",
@@ -59,7 +112,7 @@ export const projects: Project[] = [
         attribution: "Mollify Tags Page",
       },
     ],
-    liveUrl: null,
+    liveUrl: "https://mollify.noroff.dev/",
     github: "https://github.com/Anclagen/-mollify",
     stack: ["Skeleton", "TypeScript", "Svelte", "SvelteKit", "Tailwind", "Vite"],
   },
