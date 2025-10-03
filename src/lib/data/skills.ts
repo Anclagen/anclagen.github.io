@@ -1,8 +1,58 @@
+export interface SkillCategory {
+  title: string;
+  skills: string[];
+}
+
+export const skillCategories: SkillCategory[] = [
+  {
+    title: "Frontend",
+    skills: [
+      "React",
+      "Next.js",
+      "SvelteKit",
+      "Tailwind",
+      "Bootstrap",
+      "HTML, CSS, JS fundamentals",
+    ],
+  },
+  {
+    title: "Backend",
+    skills: [
+      "Node.js",
+      "Express",
+      "Sequelize",
+      "Prisma",
+      "PostgreSQL",
+      "MySQL",
+      "MSSQL",
+      "C# (learning)",
+    ],
+  },
+  {
+    title: "DevOps & Cloud",
+    skills: ["Docker", "Azure (containers, SQL, Data Factory", "GitHub Actions"],
+  },
+  {
+    title: "Testing & QA",
+    skills: ["Jest", "Supertest", "Cypress", "Postman", "Swagger", "Code Review"],
+  },
+  {
+    title: "Workflow & Tools",
+    skills: [
+      "Git",
+      "GitHub",
+      "Agile/Scrum (Jira, Trello)",
+      "Figma",
+      "Adobe XD",
+      "Power BI (data import, measures, dashboards)",
+    ],
+  },
+];
+
 export interface Skill {
   name: string;
   imgSrc: string;
 }
-
 export const skills: Skill[] = [
   { name: "HTML5", imgSrc: "https://skillicons.dev/icons?i=html" },
   { name: "CSS3", imgSrc: "https://skillicons.dev/icons?i=css" },

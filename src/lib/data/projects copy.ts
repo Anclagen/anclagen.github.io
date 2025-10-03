@@ -11,16 +11,14 @@ export type Project = {
   stack: string[];
 };
 
-// --- FEATURED / SHOWCASE PROJECTS ---
-export const showcaseProjects: Project[] = [
+export const projects: Project[] = [
   {
     title: "Quack Recruitment & Training",
     slug: "quackrecruitment",
-    description: "A client site for a UK-based recruitment and training agency.",
+    description: "Quack Recruitment & Training is a UK based recruitment agency.",
     content: [
-      "Quack Recruitment & Training is a UK-based recruitment agency specialising in temporary and permanent staffing across logistics, sales, administration, food processing, and industrial sectors.",
-      "I designed the entire site in Figma and built it bespoke with Next.js, React, and Tailwind. Form handling was integrated through WordPress (Contact Form 7), giving me the ability to create highly customised forms tailored to their recruitment process. Each new form is implemented as a React component, and with the system I’ve developed, I can spin up a new one in 20–30 minutes.",
-      "The site is fully responsive, deployed to Ionos, and includes a growing number of pages. I continue to support the client with new content and functional updates as required.",
+      "Quack Recruitment & Training is a UK based recruitment agency specialising in the supply of temporary and permanent staff to the logistics, sales, administration, food processing and industrial sectors.",
+      "The site was designed in figma, then built using a static Next.js setup and deployed to the clients domain on Ionos. The site is fully responsive and uses a WordPress installation as a form handler.",
     ],
     imageSrc: "/assets/images/site_cards/quackrecruitment.jpg",
     images: [
@@ -62,74 +60,19 @@ export const showcaseProjects: Project[] = [
       },
     ],
     realSite: "https://quackrecruitmentandtraining.co.uk/",
-    // github: "https://github.com/Anclagen-Quackers/quackrecruitment",
-    stack: ["Next.js", "React", "Tailwind", "JavaScript"],
-  },
-  {
-    title: "Productivity Graveyard",
-    slug: "productivity-graveyard",
-    description: "A humorous fullstack web app for memorializing abandoned projects.",
-    content: [
-      "Collaborative project built with a team of nine students and graduates, creating a full-stack web app from the ground up.",
-      "Backend implemented with Node.js, Express, PostgreSQL, and Sequelize to handle data and API services.",
-      "Frontend built with vanilla HTML, CSS, and JavaScript, consuming the backend API.",
-      "I initially planned and led the backend team, managing pull requests, architecture decisions, and workflow. When the frontend team stalled without clear direction, I stepped in to provide leadership, updating their plan, managing PRs, and helping push the project forward to keep delivery on track.",
-    ],
-
-    imageSrc: "/assets/images/site_cards/productivitygraveyard.jpg", // you’ll need to add this
-    images: [],
-    // liveUrl: "https://productivitygraveyard.com",
-    github: "https://github.com/Junior-Dev-Noroff/Productivity-Graveyard",
-    stack: ["Node.js", "Express", "PostgreSQL", "Sequelize", "React", "Next.js", "Tailwind"],
-  },
-  {
-    title: "Future OS (Portfolio Concept)",
-    slug: "future-os",
-    description:
-      "A playful personal project showcasing my portfolio inside a faux operating system.",
-    content: [
-      "React project simulating a desktop operating system with draggable, resizable windows (via react-rnd), icons, and a styled UI inspired by classic OS desktops.",
-      "Uses Zustand for state management and Tailwind for styling. Planned enhancements include Framer Motion animations to make window transitions and desktop interactions more dynamic.",
-      "Serves as a creative and experimental showcase alongside my more traditional portfolio site.",
-    ],
-    imageSrc: "/assets/images/site_cards/futureos.jpg",
-    images: [],
-    liveUrl: "https://future-os.netlify.app/",
-    // github: "https://github.com/Anclagen/future-os",
-    stack: ["React", "Framer Motion", "Tailwind"],
-  },
-];
-
-// --- COLLABORATION PROJECTS ---
-export const collaborationProjects: Project[] = [
-  {
-    title: "Junior.Dev",
-    slug: "juniorsdev",
-    description:
-      "Open-source collective of junior developers collaborating on real-world projects.",
-    content: [
-      "Junior.Dev is not just a website but an ongoing open-source collaboration across multiple projects, built and maintained by a team of junior developers and graduates.",
-      "The hub site itself is implemented in Next.js and Tailwind with a custom component library, but it serves mainly as the entry point for the collective.",
-      "The initiative spans multiple sub-projects — from community tools like Junobot, to creative apps like Productivity Graveyard, to developer-focused utilities like portfolio builders.",
-      "My role spans technical lead, architecture planning, and active contributions across projects. I manage GitHub workflows, PR reviews, and sprints to mirror professional team practices while mentoring peers and driving delivery.",
-    ],
-    imageSrc: "/assets/images/site_cards/juniorsdev.jpg",
-    images: [],
-    liveUrl: "https://www.thejuniors.dev/",
-    github: "https://github.com/Juniors-Dev",
-    stack: ["Next.js", "React", "Tailwind", "Node.js", "PostgreSQL", "Docker"],
+    liveUrl: null,
+    github: "https://github.com/Anclagen-Quackers/quackrecruitment",
+    stack: ["JavaScript", "React", "Tailwind", "Next"],
   },
   {
     title: "Mollify",
     slug: "mollify",
-    description: "An open source LMS (Learning Management System).",
+    description: "An open source LMS(Learning Management Platform)",
     content: [
-      "Collaborative project built in a Lerna monorepo with TypeScript and SvelteKit, focused on creating a markdown-to-website learning management system (LMS).",
-      "The LMS converted markdown into navigable webpages with search functionality, and was designed to be installable as a package for content-driven sites.",
-      "Explored additional packages such as text-to-speech (via Elvenlabs), an AI assistant, and a WYSIWYG editor, though development paused when the lead moved on and the project funding ended.",
-      "While no longer active, Mollify remains a strong example of collaborative monorepo development, modular package design, and early-stage product planning.",
+      "Mollify is an ongoing collaborative project that serves as a collection of packages in a Lerna mono repository. Its central package is the learning management system (LMS), designed to convert markdown content into webpages. This LMS enables efficient navigation and search functionalities, turning simple markdown into a dynamic, user-friendly website.",
+      "While it is a work in progress, the long-term vision for Mollify is to provide a seamless platform where users can install the @Mollify/LMS package, create a content folder with markdown content, and effortlessly convert it into a navigable webpage. This initiative will empower users to effectively curate, modify, and present their content in line with the package's standards.",
+      "Future enhancements under development include a text-to-speech package using Elvenlabs, allowing users to convert their written lessons into audio content. Additionally, an AI assistant package, Molly, is being designed to be equipped with lesson content and answer queries related to the same. Lastly, the Flow package is being worked on to offer a 'what you see is what you get' editor, enabling users to easily create and update their markdown content.",
     ],
-
     imageSrc: "/assets/images/site_cards/mollify.jpg",
     images: [
       {
@@ -171,36 +114,14 @@ export const collaborationProjects: Project[] = [
     ],
     liveUrl: "https://mollify.noroff.dev/",
     github: "https://github.com/Anclagen/-mollify",
-    stack: ["TypeScript", "Svelte", "SvelteKit", "Tailwind", "Vite"],
+    stack: ["Skeleton", "TypeScript", "Svelte", "SvelteKit", "Tailwind", "Vite"],
   },
-  {
-    title: "Noroff Jobs API",
-    slug: "noroff-jobs-api",
-    description: "API for Noroff's internal job/placement platform.",
-    content: [
-      "Built with Node.js and Express, using Prisma and PostgreSQL for database management.",
-      "Collaborated with Noroff staff and students to design and implement a basic system for companies to post job listings, students to apply, and both parties to manage offers with authentication in place.",
-      "The platform continues to be intermittently maintained and extended by students as part of their coursework, serving as an active learning showcase.",
-    ],
-    imageSrc: "/assets/images/site_cards/noroffjobs.jpg", // add a mockup
-    images: [],
-    github: "https://github.com/NoroffFEU/agency-api.noroff.dev",
-    stack: ["Node.js", "Express", "PostgreSQL", "Prisma"],
-  },
-];
-
-// --- ARCHIVE / LEARNING PROJECTS ---
-export const archiveProjects: Project[] = [
   {
     title: "TechBeauty",
     slug: "techbeauty",
-    description: "Functional e-commerce site built with React and Redux.",
+    description: "An e-commerce website built using react, redux, and styled components.",
     content: [
-      "Developed as part of a Noroff assignment to practice modern frontend development.",
-      "Implemented product sorting, filtering, and search, with a cart powered by Redux for state management.",
-      "Built a validated contact form using react-hook-form and yup for input validation.",
-      "Styled with styled-components and integrated with a provided API to fetch product data.",
-      "Fully responsive, showcasing a complete e-commerce flow from browsing to cart management.",
+      "As part of a Noroff assignment, I developed TechBeauty, a straightforward functional and responsive eCommerce website crafted using React and Redux. It included a working cart with state management provided by Redux. A validated contact form using yup and react-hook-form. The ability to sort, filter and search the products. The site was styled using styled components, and the product data was fetched from a provided API.",
     ],
     imageSrc: "/assets/images/site_cards/techbeauty.jpg",
     images: [
@@ -243,18 +164,16 @@ export const archiveProjects: Project[] = [
     ],
     liveUrl: "https://gleaming-boba-6793eb.netlify.app/",
     github: "https://github.com/Anclagen/TechBeauty",
-    stack: ["React", "Redux", "JavaScript", "Styled Components"],
+    stack: ["SASS", "Bootstrap", "JavaScript", "React", "Redux"],
   },
   {
     title: "Forgotten Treasures",
     slug: "forgotten-treasures",
-    description: "Auction house site built with vanilla JavaScript, Sass, and Bootstrap.",
+    description: "An online auction house website, using Noroffs API.",
     content: [
-      "Developed as a semester project to simulate a full-featured auction platform.",
-      "Implemented account registration, login, and profile management, restricted to stud.noroff.no email addresses.",
-      "Registered users can update avatars, view credits, create listings with attributes, and place bids on other listings.",
-      "Unregistered visitors can still browse and search listings, ensuring wider accessibility.",
-      "End-to-end tests written with Cypress cover key user stories, validating core flows like registration, bidding, and search.",
+      "As a part of a semester project, I developed Forgotten Treasures, an auction house website using JavaScript, Sass, and Bootstrap. The site was designed to cater to a range of user interactions, be responsive, and user-friendly.",
+      "Key user stories addressed within this project include account registration, login, and logout functionalities exclusive to users with a stud.noroff.no email address. Registered users enjoy the ability to update their avatar, view their total credit, create listings with detailed attributes, and place bids on other users' listings. The site also allows unregistered users to search through the available listings, ensuring accessibility and convenience for all site visitors.",
+      "The repository includes Cypress tests that cover all the above user stories, demonstrating the site's functionality and reliability. ",
     ],
     imageSrc: "/assets/images/site_cards/forgottentreasures.jpg",
     images: [
@@ -309,18 +228,16 @@ export const archiveProjects: Project[] = [
     ],
     liveUrl: "https://anclagen.github.io/Semester-Project-2/",
     github: "https://github.com/Anclagen/Semester-Project-2",
-    stack: ["JavaScript", "Sass", "Bootstrap"],
+    stack: ["SASS", "BootStrap", "JavaScript"],
   },
   {
     title: "SoSocial",
     slug: "sosocial",
-    description: "A social media clone using Noroff API.",
+    description: "A social media website built using Noroff's API.",
     content: [
-      "Developed as a semester project to simulate a functional social media platform.",
-      "Implemented authentication restricted to @noroff.no and @stud.noroff.no emails, with profile registration and login flows.",
-      "Core features include a content feed with view, filter, and search capabilities, as well as the ability to create, update, and delete posts.",
-      "Extended features include commenting, editing profile media, following/unfollowing users, and reacting to posts.",
-      "Designed for responsive use with Bootstrap and Sass to provide a modern, user-friendly interface.",
+      "Sosocial, was created using Bootstrap, Sass, and JavaScript. The website is designed to cater to a wide range of user interactions and to provide a user-friendly social media experience.",
+      "The platform allows users with @noroff.no or @stud.noroff.no emails to register profiles and log in. Post interactions are central to the Sosocial experience, with features allowing users to view, filter, and search the post content feed. Additionally, users can view a particular post content item by ID, as well as create, update, or delete their own post content items. These features provide a robust and interactive social media environment.",
+      "In addition to the core features, it also includes several optional user stories. Users can create comments on posts, edit their profile media, follow or unfollow profiles, and react to post content items.",
     ],
     imageSrc: "/assets/images/site_cards/sosocial.jpg",
     images: [
@@ -351,16 +268,14 @@ export const archiveProjects: Project[] = [
     ],
     liveUrl: "https://so-social-alexander-barrett.netlify.app/",
     github: "https://github.com/Anclagen/SoSocial",
-    stack: ["JavaScript", "Sass", "Bootstrap"],
+    stack: ["SASS", "BootStrap", "JavaScript"],
   },
   {
     title: "The Fluffy Piranha Blog",
     slug: "fluffy-piranha-blog",
-    description: "Dog blog using headless WordPress.",
+    description: "A dog blog, using a headless WordPress CMS for content.",
     content: [
-      "Developed as the final project of my first year at Noroff, a themed blog built around my dog, combining playful branding with solid technical implementation.",
-      "Implemented responsive layouts with CSS and JavaScript for interactivity.",
-      "Integrated WordPress as a headless CMS to manage and publish blog posts, with support for interactive comments.",
+      "In the culmination of my first year at Noroff, I undertook an exciting project called 'The Fluffy Piranha,' a dedicated blog for my dog. This website leveraged CSS, JavaScript, and WordPress as a headless CMS, allowing me to publish blog posts and facilitate interactive comments.",
     ],
     imageSrc: "/assets/images/site_cards/fluffypiranha.jpg",
     images: [
@@ -409,17 +324,15 @@ export const archiveProjects: Project[] = [
     ],
     liveUrl: "https://fluffy-piranha-dog-blog.netlify.app/",
     github: "https://github.com/Anclagen/Blog-Site-WP-Headless-CMS",
-    stack: ["WordPress", "JavaScript", "CSS3"],
+    stack: ["CSS3", "JavaScript", "WordPress"],
   },
   {
     title: "Rainydays",
     slug: "rainydays",
-    description: "Outdoor jacket e-commerce project.",
+    description: "A fictional site for an outdoor jacket seller, using a headless WordPress CMS for content.",
     content: [
-      "Started as a first-year HTML and CSS exercise focused on creating a responsive storefront for outdoor jackets.",
-      "Expanded with JavaScript to add interactivity including a shopping cart, checkout system, product filtering, and search functionality.",
-      "Later integrated with a headless WordPress CMS to serve dynamic product data, connecting backend content management with the existing JavaScript front end.",
-      "Demonstrates progression from static design to a fully interactive e-commerce site with real product management.",
+      "In my first year at Noroff, I embarked on the Rainydays project,  an eCommerce website committed to selling outdoor jackets. The project started as a pure HTML and CSS exercise, marking my first step into the world of web development. This phase taught me the importance of building visually appealing and responsive websites, enhancing user experience through effective web design.",
+      "As I progress I in my studies, I added further interactivity to the project through JavaScript, Implementing a shopping cart, checkout system, product page filter and search functionality. Finally I added a headless WordPress CMS to server the product data, integrating it with the existing JavaScript functionality.",
     ],
     imageSrc: "/assets/images/site_cards/rainydays.jpg",
     images: [
@@ -468,18 +381,19 @@ export const archiveProjects: Project[] = [
     ],
     liveUrl: "https://rainydays-alexander-barrett.netlify.app",
     github: "https://github.com/Anclagen/Rainydays",
-    stack: ["WordPress", "JavaScript", "CSS3"],
+    stack: ["CSS3", "JavaScript", "WordPress"],
   },
   {
     title: "Community Science Museum",
     slug: "community-science-museum",
-    description: "HTML/CSS site for fictional museum.",
+    description: "A website for a community science museum, as part of a first-semester project for Noroff.",
     content: [
-      "First-semester project at Noroff: a website for a fictional science museum designed to appeal to both children and parents.",
-      "Built entirely with HTML and CSS, focusing on clean, responsive layouts and visually engaging design.",
-      "Served as an introduction to web development fundamentals, accessibility considerations, and cross-device responsiveness.",
+      "My first semester at Noroff saw the birth of the Community Science Museum project, a website dedicated to a fictional science museum. The primary goal of this project was to create a site that would intrigue both children and parents alike, using only HTML and CSS, to create a visually captivating and responsive website.",
     ],
     imageSrc: "/assets/images/site_cards/communitysciencemuseum.jpg",
+    liveUrl: "https://science-museum-alexander-barrett.netlify.app",
+    github: "https://github.com/Anclagen/Community-Science-Museum-SP1",
+    stack: ["HTML5", "CSS3"],
     images: [
       {
         id: 0,
@@ -524,8 +438,5 @@ export const archiveProjects: Project[] = [
         attribution: "Community Science Museum Contact Page",
       },
     ],
-    liveUrl: "https://science-museum-alexander-barrett.netlify.app",
-    github: "https://github.com/Anclagen/Community-Science-Museum-SP1",
-    stack: ["HTML5", "CSS3"],
   },
 ];

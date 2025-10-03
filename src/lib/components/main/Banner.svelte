@@ -2,10 +2,19 @@
   import { Heading } from "flowbite-svelte";
 </script>
 
-<div class="flex min-h-screen justify-center items-center bg-banner2 dark:bg-banner1 bg-cover bg-center" id="home">
-  <div class="w-full sm:w-96 py-3 px-5 bg-light-primary dark:bg-primary dark:text-white rounded-2xl shadow-xl dark:shadow-highlights">
-    <Heading tag="h1" class="text-center text-primary dark:text-light-primary mb-4">Hi, I'm Alexander</Heading>
+<div
+  class="flex min-h-screen justify-center items-center bg-banner2 dark:bg-banner1 bg-cover bg-center"
+  id="home"
+>
+  <div
+    class="w-full sm:w-96 py-3 px-5 bg-light-primary dark:bg-primary dark:text-white rounded-2xl shadow-xl dark:shadow-highlights"
+  >
+    <Heading tag="h1" class="text-center text-primary dark:text-light-primary mb-4"
+      >Hi, I'm Alexander</Heading
+    >
     <img src="/assets/images/alexander_barrett.jpg" alt="Alexander Barrett" />
-    <p class="my-2 text-xl">I'm an aspiring front end developer.</p>
+    <p class="my-2 text-xl">
+      I'm a junior fullstack developer working with React, Node.js, and SQL.
+    </p>
   </div>
 </div>
