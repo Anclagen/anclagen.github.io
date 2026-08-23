@@ -14,7 +14,8 @@
     >
     <img src="/assets/images/alexander_barrett.jpg" alt="Alexander Barrett" />
     <p class="my-2 text-xl">
-      I'm a junior fullstack developer working with React, Node.js, and SQL.
+      I'm a full-stack developer focused on backend engineering, building web applications with
+      .NET, Node.js, React, and SQL.
     </p>
   </div>
 </div>

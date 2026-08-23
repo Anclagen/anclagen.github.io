@@ -14,13 +14,66 @@ export type Project = {
 // --- FEATURED / SHOWCASE PROJECTS ---
 export const showcaseProjects: Project[] = [
   {
+    title: "Clinic Hub",
+    slug: "clinic-hub",
+    description:
+      "A full-stack medical appointment booking and clinic management system built as my second-year Back-End Development exam project.",
+
+    content: [
+      "Clinic Hub is a full-stack appointment booking system that allows patients and guests to find doctors, browse clinics, book appointments, and manage existing bookings. It also includes an administrative interface for managing doctors, clinics, appointment categories, patients, and appointments.",
+
+      "I built the backend as a .NET 10 REST API using ASP.NET Core, Entity Framework Core, and MySQL. The API includes JWT authentication, separate patient and admin access, role-based endpoint protection, FluentValidation, Swagger/OpenAPI documentation, pagination, filtering, data seeding, and validation around appointment scheduling and data relationships.",
+
+      "The frontend was built with Next.js 16, React, TypeScript, and Tailwind CSS. It includes guest and registered-patient booking flows, doctor and clinic directories, search and filtering, calendar-based appointment selection, appointment cancellation and rescheduling, and persistent authentication state using Zustand.",
+
+      "A significant part of the project involved handling appointment dates and timezones consistently between the browser, API, and MySQL database. Dates are normalised around UTC, while the frontend uses date-fns and date-fns-tz to handle display and booking behaviour correctly across different client timezones.",
+    ],
+
+    imageSrc: "/assets/images/site_cards/clinic-hub.jpg",
+
+    images: [
+      {
+        id: 0,
+        name: "Clinic Hub Home",
+        imgurl: "/assets/images/clinic-hub/clinic-hub.jpg",
+        attribution: "Clinic Hub",
+      },
+      {
+        id: 1,
+        name: "Clinic Hub Booking",
+        imgurl: "/assets/images/clinic-hub/clinic-hub-booking.jpg",
+        attribution: "Home Page",
+      },
+      {
+        id: 2,
+        name: "Clinic Hub Doctors",
+        imgurl: "/assets/images/clinic-hub/clinic-hub-search-doc.jpg",
+        attribution: "Doctor Directory",
+      },
+    ],
+
+    realSite: "https://clinic-hub.ajbarrett.tech/",
+    github: "https://github.com/Anclagen/Clinic-Hub",
+
+    stack: [
+      "dotnet",
+      "ASP.NET Core",
+      "Entity Framework Core",
+      "MySQL",
+      "Next",
+      "React",
+      "TypeScript",
+      "Tailwind",
+    ],
+  },
+  {
     title: "Quack Recruitment & Training",
     slug: "quackrecruitment",
     description: "A client site for a UK-based recruitment and training agency.",
     content: [
-      "Quack Recruitment & Training is a UK-based recruitment agency specialising in temporary and permanent staffing across logistics, sales, administration, food processing, and industrial sectors.",
-      "I designed the entire site in Figma and built it bespoke with Next.js, React, and Tailwind. Form handling was integrated through WordPress (Contact Form 7), giving me the ability to create highly customised forms tailored to their recruitment process. Each new form is implemented as a React component, and with the system I’ve developed, I can spin up a new one in 20–30 minutes.",
-      "The site is fully responsive, deployed to Ionos, and includes a growing number of pages. I continue to support the client with new content and functional updates as required.",
+      "Quack Recruitment & Training is a UK-based recruitment and training provider delivering recruitment services alongside government-funded Skills Bootcamp programmes.",
+      "I designed and built the site from the ground up using Figma, Next.js, React, and Tailwind CSS. The project includes bespoke recruitment and learner forms, with submissions integrated through WordPress and Contact Form 7. I developed the form system around reusable React components, allowing new forms and programme-specific requirements to be added without rebuilding the underlying functionality.",
+      "The site has grown substantially since its original launch and now includes recruitment services, training programmes, Skills Bootcamp course pages, learner information and policy resources, safeguarding content, and application flows. I continue to maintain the site for the client, implementing new programmes, content changes, functionality, and compliance-related updates as requirements evolve.",
     ],
     imageSrc: "/assets/images/site_cards/quackrecruitment.jpg",
     images: [
@@ -115,7 +168,7 @@ export const collaborationProjects: Project[] = [
     ],
     imageSrc: "/assets/images/site_cards/juniorsdev.jpg",
     images: [],
-    liveUrl: "https://www.thejuniors.dev/",
+    // liveUrl: "https://www.thejuniors.dev/",
     github: "https://github.com/Juniors-Dev",
     stack: ["Next.js", "React", "Tailwind", "Node.js", "PostgreSQL", "Docker"],
   },
